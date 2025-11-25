@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>add and change HTML</title>
+  </head>
+  <body>
+    <script>
+      // 1. create element
+      const h1el = document.createElement("h1");
+      const h2el = document.createElement("h1");
+      // 2. add property
+      h1el.textContent = "Hello world!";
+      h2el.textContent = "welcome!";
+      h1el.id = "newh1";
+      h2el.id = "newh2";
+      h1el.style.textAlign = "center";
+      h2el.style.textAlign = "center";
+      h1el.style.color = "red";
+      // 3. append dom with element
+      document.body.append(h1el);
+      document.body.prepend(h2el);
+      // 4. remove element html
+      document.body.removeChild(h2el);
+    </script>
+  </body>
+</html>
