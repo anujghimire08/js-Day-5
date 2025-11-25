@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    p {
+      width: 200px;
+      height: 100px;
+      font-size: 25px;
+      background-color: lightblue;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <p id="myp">Hello</p>
+    <script>
+      const pel = document.getElementById("myp");
+      pel.addEventListener("mouseover", () => {
+        pel.style.backgroundColor = "red";
+        pel.textContent = "don't hover";
+      });
+      pel.addEventListener("mouseout", () => {
+        pel.style.backgroundColor = "green";
+        pel.style.color = "white";
+        pel.textContent = "youre safe";
+      });
+      // pel.addEventListener("mouseout", mouseOut);
+      // function mouseOut() {
+      //   pel.style.backgroundColor = "green";
+      //   pel.style.color = "white";
+      //   pel.textContent = "you're safe";
+      // }
+    </script>
+  </body>
+</html>
