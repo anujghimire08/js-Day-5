@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      src="https://www.weathercompany.com/wp-content/uploads/2024/01/AdobeStock_359999296-sized.jpg"
+    /><br />
+    <button style="font-size: 2rem">Hide</button>
+    <script>
+      buttonEL = document.querySelector("button");
+      const imgEL = document.querySelector("img");
+      buttonEL.addEventListener("click", () => {
+        if (imgEL.style.display === "none") {
+          imgEL.style.display = "block";
+          buttonEL.textContent = "Hide";
+        } else {
+          imgEL.style.display = "none";
+          buttonEL.textContent = "Show";
+        }
+      });
+    </script>
+  </body>
+</html>
